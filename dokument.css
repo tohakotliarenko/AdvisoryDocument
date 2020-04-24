@@ -1,24 +1,67 @@
 body {
     font-family: 'Roboto', sans-serif;
-
+    background: #ffffff;
 }
 
-.headline {
+.pageContainer {
+    max-width: 1140px;
+    margin: 1em auto;
+    padding: 3.125em;
+}
+
+h1, h2 {
     font-weight: bold;
 }
 
-.table-headlines {
-    font-weight: normal;
-    color: #959496;
+h1 {
+    font-size: 2em;
+    line-height: 1.1875em;
 }
 
+h2 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    text-align: center;
+}
 
-.document-container {
+.card {
+    border: none;
+}
+
+.br-10 {
     border-radius: 10px;
-    padding: 50px;
-    margin-top: 10px;
 }
 
-.margin-top {
-    margin-top: 10px;
+.top-section .card-inner dl {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.second-section .column-inner .header {
+    font-weight: 700;
+}
+
+.second-section .column-inner .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.third-section-inner {
+    padding: 1.625em;
+}
+
+.third-section h1 {
+    margin-left: 0.375em;
+}
+
+@media screen and (max-width: 767px) {
+    .pageContainer {
+        font-size: 0.875em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .pageContainer {
+        font-size: 0.75em;
+    }
 }

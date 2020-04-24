@@ -1,147 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="dokument.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="dokument.css">
 </head>
 <body>
-
-    <div class="dokument">
-
-      <div class="container">
-             
-        <div class="row">
-              <div class="col shadow document-container">
-                  <h2 class="headline">Rådgivningsdokument bil</h2>
-                  <br>
-                  <div class="row">
-                    <div class="col-sm d-flex justify-content-center shadow" style="border-radius: 20px; margin-right: 20px;">
-                      <div>
-                      <br>
-                      <h5 class="headline" style="text-align: center;">Nuvarande produkt</h5>
-                      <table class="table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>Name</td>
-                            <td>Bilförsäkring Stor</td>
-                          </tr>
-                          <tr>
-                            <td>Objekt</td>
-                            <td>CDF 729</td>
-                          </tr>
-                          <tr>
-                            <td>Försäkringsgivare</td>
-                            <td>Trygg Hansa</td>
-                          </tr>
-                          <tr>
-                            <td>Omfattning</td>
-                            <td>Helförsäkring</td>
-                          </tr>
-                          <tr>
-                            <td>Tilläggsförsäkringar</td>
-                            <td>Alla</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      </div>
-                    </div>
-                    <div class="col-sm d-flex justify-content-center shadow" style="border-radius: 20px;">
-                      <div>
-                      <br>
-                      <h5 class="headline" style="text-align: center;">Rekommenderad produkt</h5>
-                      <table class="table table-borderless">
-                        <tbody>
-                          <tr>
-                            <td>Name</td>
-                            <td>Bilförsäkring Stor</td>
-                          </tr>
-                          <tr>
-                            <td>Objekt</td>
-                            <td>CDF 729</td>
-                          </tr>
-                          <tr>
-                            <td>Försäkringsgivare</td>
-                            <td>Trygg Hansa</td>
-                          </tr>
-                          <tr>
-                            <td>Omfattning</td>
-                            <td>Helförsäkring</td>
-                          </tr>
-                          <tr>
-                            <td>Tilläggsförsäkringar</td>
-                            <td>Alla</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-
-                    <h1>test</h1>
-
-                  </div>
-              </div>
-          </div>
-      </div>
-
-        <div class="container">
-             
-                <div class="row">
-                    <div class="col shadow document-container">
-                        <h1 class="headline">Översikt</h1>
-                        <table class="table table-borderless">
-                            <thead>
-                              <tr>
-                                <th class="table-headlines" scope="col">Försäkringsöversikt</th>
-                                <th class="table-headlines" scope="col">Nuvarande premie</th>
-                                <th class="table-headlines" scope="col">Avgift</th>
-                                <th class="table-headlines" scope="col">Premie</th>
-                                <th class="table-headlines" scope="col">Premie Rekommenderad</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>CDF 729</td>
-                                <td>3000</td>
-                                <td>200</td>
-                                <td>2300</td>
-                                <td>2300</td>
-                              </tr>
-                              <tr>
-                                <td>NOR 252</td>
-                                <td>3000</td>
-                                <td>200</td>
-                                <td>2300</td>
-                                <td>2300</td>
-                              </tr>
-                            </tbody>
-                        </table>
-
-                        <img src="line.svg" alt="">
-                       
-                        <table class="table table-borderless">
-                          <thead>
-                            <tr>
-                              <th scope="col-xs">Totalt: 5000kr</th>
-                              <th scope="col-xs">Besparing: 600kr</th>
-                    
-                            </tr>
-                          </thead>
-                        </table>
-                    </div>
-                </div>
+  <div class="pageContainer shadow br-10">
+    <h1>Rådgivningsdokument bil</h1>
+    <div class="row top-section">
+      <div class="col-12 col-md-6 mt-4 pl-0 pr-0 pr-md-2 card">
+        <div class="shadow p-4 card-inner br-10">
+          <h2 class="pb-3">Nuvarande produkt</h2>
+          <dl class="row">
+            <dt class="col-6 pb-3">Name</dt>
+            <dd class="col-6 pb-3">Bilförsäkring Stor</dd>
+            <dt class="col-6 pb-3">Objekt</dt>
+            <dd class="col-6 pb-3">CDF 729</dd>
+            <dt class="col-6 pb-3">Försäkringsgivare</dt>
+            <dd class="col-6 pb-3">Trygg Hansa</dd>
+            <dt class="col-6 pb-3">Omfattning</dt>
+            <dd class="col-6 pb-3">Helförsäkring</dd>
+            <dt class="col-6">Tilläggsförsäkringar</dt>
+            <dd class="col-6">Alla</dd>
+          </dl>
         </div>
-
+      </div>
+      <div class="col-12 col-md-6 mt-4 pr-0 pl-0 pl-md-2 card">
+        <div class="shadow p-4 card-inner br-10">
+          <h2 class="pb-3">Rekommenderad produkt</h2>
+          <dl class="row">
+            <dt class="col-6 pb-3">Name</dt>
+            <dd class="col-6 pb-3">Bilförsäkring Stor</dd>
+            <dt class="col-6 pb-3">Objekt</dt>
+            <dd class="col-6 pb-3">CDF 729</dd>
+            <dt class="col-6 pb-3">Försäkringsgivare</dt>
+            <dd class="col-6 pb-3">Trygg Hansa</dd>
+            <dt class="col-6 pb-3">Omfattning</dt>
+            <dd class="col-6 pb-3">Helförsäkring</dd>
+            <dt class="col-6">Tilläggsförsäkringar</dt>
+            <dd class="col-6">Alla</dd>
+          </dl>
+        </div>
+      </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <div class="row second-section">
+      <div class="col-12 col-md-6 mt-4 pl-0 pr-0 pr-md-2 card">
+        <div class="shadow p-4 br-10">
+          <div class="column-inner">
+            <div class="row mb-3 header">
+              <div class="col-4">Moment</div>
+              <div class="col-4">Omfattning</div>
+              <div class="col-4">Självrisk</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4 font-weight-bold">Trafik</div>
+              <div class="col-4">Obligatorisk försäkring för personskador och skador på annans egendom.</div>
+              <div class="col-4">1000 kr</div>
+            </div>
+
+            <h2 class="mb-4 mt-5">Delkasko</h2>
+            <div class="row mb-3">
+              <div class="col-4">Brand</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1800 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Stöld</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1800 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Glas</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1500 kr / 100 kr rep.</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Maskin/elektronik</div>
+              <div class="col-4">8 år / 12 000 mil</div>
+              <div class="col-4">3000/5000/7000 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Räddning</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1500 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Rättsskydd</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">20% lägst 1500 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Kris</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr 10 besök</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4 font-weight-bold">Vagnskada</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">3000 kr</div>
+            </div>
+
+            <h2 class="mb-4 mt-5">Tilläggsförsäkringar</h2>
+            <div class="row mb-3">
+              <div class="col-4">Assistans</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Skadegörelse</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Djurkollision</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">Max 6000 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Hyrbil</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">Max 60 dagar 75% av hyrbilskostnaden.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-4 pr-0 pl-0 pl-md-2 card">
+        <div class="shadow p-4 br-10">
+          <div class="column-inner">
+            <div class="row mb-3 header">
+              <div class="col-4">Moment</div>
+              <div class="col-4">Omfattning</div>
+              <div class="col-4">Självrisk</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4 font-weight-bold">Trafik</div>
+              <div class="col-4">Obligatorisk försäkring för personskador och skador på annans egendom.</div>
+              <div class="col-4">1000 kr</div>
+            </div>
+
+            <h2 class="mb-4 mt-5">Delkasko</h2>
+            <div class="row mb-3">
+              <div class="col-4">Brand</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1800 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Stöld</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1800 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Glas</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1500 kr / 100 kr rep.</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Maskin/elektronik</div>
+              <div class="col-4">8 år / 12 000 mil</div>
+              <div class="col-4">3000/5000/7000 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Räddning</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">1500 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Rättsskydd</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">20% lägst 1500 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Kris</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr 10 besök</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4 font-weight-bold">Vagnskada</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">3000 kr</div>
+            </div>
+
+            <h2 class="mb-4 mt-5">Tilläggsförsäkringar</h2>
+            <div class="row mb-3">
+              <div class="col-4">Assistans</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Skadegörelse</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">0 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Djurkollision</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">Max 6000 kr</div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">Hyrbil</div>
+              <div class="col-4">Ingår</div>
+              <div class="col-4">Max 60 dagar 75% av hyrbilskostnaden.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 third-section">
+      <div class="col-12 br-10 shadow third-section-inner">
+        <h1 class="headline">Översikt</h1>
+        <table class="table table-borderless">
+          <thead>
+          <tr>
+            <th class="table-headlines" scope="col">Försäkringsöversikt</th>
+            <th class="table-headlines" scope="col">Nuvarande premie</th>
+            <th class="table-headlines" scope="col">Avgift</th>
+            <th class="table-headlines" scope="col">Premie</th>
+            <th class="table-headlines" scope="col">Premie Rekommenderad</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>CDF 729</td>
+            <td>3000</td>
+            <td>200</td>
+            <td>2300</td>
+            <td>2300</td>
+          </tr>
+          <tr>
+            <td>NOR 252</td>
+            <td>3000</td>
+            <td>200</td>
+            <td>2300</td>
+            <td>2300</td>
+          </tr>
+          </tbody>
+        </table>
+
+        <img src="line.svg" alt="" class="w-100">
+
+        <table class="table table-borderless mb-0">
+          <thead>
+          <tr>
+            <th scope="col-xs">Totalt: 5000kr</th>
+            <th scope="col-xs">Besparing: 600kr</th>
+          </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
