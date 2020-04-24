@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.headline {
+    font-weight: bold;
+}
+
+.table-headlines {
+    font-weight: normal;
+    color: #959496;
+}
+
+
+.document-container {
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 10px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
