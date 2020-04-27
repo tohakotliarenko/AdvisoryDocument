@@ -28,26 +28,38 @@ body a:active, body a:hover {
     text-decoration: none;
     color: #ff7f00;
 }
-
-
 body {
     font-family: 'Roboto', sans-serif;
     background: #ffffff;
 }
-
-.pageContent {
-    max-width: 962px;
-    margin: 3em auto 1em;
-    /*padding: 3.125em;*/
+h1, h2 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 2em;
+    line-height: 1.1875em;
+}
+h2 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+    text-align: center;
+}
+.card {
+    border: none;
+}
+.br-10 {
+    border-radius: 10px;
 }
 
 
+/* ======================================== HEADER ======================================== */
 .header {
     width: 100%;
     height: 72px;
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
     background-color: #FFFFFF;
     visibility: visible;
     z-index: 900;
@@ -111,15 +123,51 @@ body {
     line-height: 24px;
     color: #2B292D;
 }
+.price-calculator {
+    padding-right: 20px;
+    background: url('images/arrow-down.png') right center no-repeat;
+    background-size: 12px 8px;
+}
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .price-calculator {
+        background: url('images/arrow-down@2x.png') right center no-repeat;
+        background-size: 12px 8px;
+    }
+}
 .linkText.active {
     color: #ff7f00;
 }
 .localeWithButtonsContainer {
     flex: 0 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
     flex-flow: row nowrap;
     width: 206px;
+}
+.user-menu {
+    width: 40px;
+    height: 40px;
+    background: url('images/user-avatar.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .user-menu {
+        background: url('images/user-avatar@2x.png') 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
 }
 .localeContainer {
     flex: 0 0 auto;
@@ -234,13 +282,13 @@ body {
     flex: 0 0 56px;
 }
 .mobileHeader .logoContainer {
-    flex: 0 0 100px;
+    flex: 0 0 96px;
     display: flex;
     align-items: center;
 }
 .mobileHeader .logo {
     overflow: hidden;
-    flex: 0 0 100px;
+    flex: 0 0 96px;
     height: 40px;
     text-indent: -1000px;
     background: url('images/header-logo.png') 0 0 no-repeat;
@@ -338,31 +386,142 @@ body {
     height: 100%;
     margin: 0 18px;
 }
+/* ======================================== HEADER END ======================================== */
 
+/* ======================================== TOTAL SECTION ======================================== */
 
-
-
-h1, h2 {
-    font-weight: bold;
+.total-section {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-h1 {
-    font-size: 2em;
-    line-height: 1.1875em;
+.total-section-inner {
+    padding: 1.5em 2em;
 }
 
-h2 {
-    font-size: 1.25em;
-    line-height: 1.2em;
+.total-section h1 {
+    margin-left: 0.375em;
+}
+
+.total-section .overview-table-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.total-section .overview-table-container table th {
+    font-size: 0.625em;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    vertical-align: top;
+    color: rgb(146, 146, 148);
+}
+
+.total-section .overview-table-container th:first-child,
+.total-section .overview-table-container td:first-child {
+    padding-left: 0;
+}
+
+.total-section .overview-table-container table td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.total-section .totalContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 0.9em;
+    margin-left: 1.1875em;
+    padding: 1em 2.25em;
+    background: rgba(204, 204, 204, 0.1);
+    border-radius: 16px;
     text-align: center;
 }
 
-.card {
-    border: none;
+.total-section .totalContainer span {
+    font-size: 0.8125em;
+    line-height: 1.23em;
+    padding-bottom: 0.4em;
+    text-transform: uppercase;
+    color: rgb(146, 146, 148);
 }
 
-.br-10 {
-    border-radius: 10px;
+.total-section .totalContainer strong {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.333em;
+    color: #2B292D;
+    white-space: nowrap;
+}
+
+.total-section .possible-economy-container strong {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.75em;
+    line-height: 1em;
+    color: #FF7F00;
+    padding-right: 0.4em;
+}
+
+.total-section .possible-economy-container em {
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.total-section .possible-economy-container img {
+    position: relative;
+    top: -0.5em;
+    line-height: 0;
+}
+
+.buttons-container {
+    text-align: right;
+}
+
+.total-section .buttons-container .export-link {
+    display: inline-block;
+    font-size: 0.875em;
+    line-height: 1.714em;
+    text-transform: uppercase;
+    color: #666666;
+    padding: 0.57em 1em 0.57em 2.6em;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 100px;
+    background: url('images/doc.png') 1em 48% no-repeat;
+    background-size: 14px 18px;
+}
+
+.total-section .buttons-container .export-link:hover {
+    color: #ff7f00;
+}
+
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .total-section .buttons-container .export-link {
+        background: url('images/doc@2x.png') 1em 48% no-repeat;
+        background-size: 14px 18px;
+    }
+}
+
+/* ======================================== TOTAL SECTION END ======================================== */
+
+.pageContent {
+    overflow: hidden;
+    max-width: 1026px;
+    margin: 0 auto 1em;
+    padding: 7.5em 2em 2em;
 }
 
 .pageContent .headline {
@@ -386,138 +545,142 @@ h2 {
     color: #ff7f00;
 }
 
-.top-section .card-inner dl {
-    max-width: 360px;
-    margin: 0 auto;
+/* ======================================== OVERVIEW SECTION ======================================== */
+
+.overview-section {
+    margin: 2.25em 0 0;
+    padding: 0 2em;
 }
 
-.second-section .column-inner .header {
+.overview-section > h2 {
+    font-size: 0.8125em;
+    line-height: 1.23em;
+    text-transform: uppercase;
+    color: rgb(146, 146, 148);
+    text-align: left;
+    margin-left: 1.5em;
+    margin-bottom: 0;
+}
+
+.overview-section h3 {
+    color: rgb(146, 146, 148);
+    margin-left: 15px;
+}
+
+.overview-section .card-inner dl {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+    padding: 1em;
+    background: rgba(204, 204, 204, 0.1);
+}
+
+.overview-section .card-inner dt {
+    font-size: 0.75em;
+    line-height: 1.333em;
+    color: rgb(146, 146, 148);
+    flex: 1 0 107px;
+}
+
+.overview-section .card-inner dd {
+    overflow: hidden;
+    font-size: 0.8125em;
+    line-height: 1.23em;
+    text-transform: uppercase;
+    color: #000000;
+    flex: 1 0 140px;
+}
+
+.overview-section .insurance-options-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-section .insurance-options-container > div {
+    width: 380px;
+}
+
+.overview-section .insurance-options-container > div:last-child h3 {
+    color: #FF7F00;
+}
+
+/* ======================================== OVERVIEW SECTION END ======================================== */
+
+
+/* ======================================== TABLE SECTION ======================================== */
+
+.table-section .column-inner .header {
     font-weight: 700;
 }
 
-.second-section .column-inner .row {
+.table-section .row {
+    border-bottom: 1px solid #E6E8EB;
     margin-left: 0;
     margin-right: 0;
 }
 
-.third-section {
-    margin-left: 0;
-    margin-right: 0;
+.table-section .row:not(:first-child) > div:nth-child(odd) {
+    border-right: 1px solid #E6E8EB;
 }
 
-.third-section-inner {
-    padding: 1.5em 2em;
+.pageContainer .pageContent .table-section .row > div:last-child {
+    border: none;
 }
 
-.third-section h1 {
-    margin-left: 0.375em;
-}
-
-.third-section .overview-table-container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1em;
-}
-
-.third-section .overview-table-container table th {
-    font-size: 0.625em;
-    line-height: 1.6em;
-    text-transform: uppercase;
-    vertical-align: top;
-    color: rgb(146, 146, 148);
-}
-
-.third-section .overview-table-container th:first-child,
-.third-section .overview-table-container td:first-child {
-    padding-left: 0;
-}
-
-.third-section .overview-table-container table td {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.third-section .totalContainer {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 0.9em;
-    margin-left: 1.1875em;
-    padding: 1em 2.25em;
-    background: rgba(204, 204, 204, 0.1);
-    border-radius: 16px;
-    text-align: center;
-}
-
-.third-section .totalContainer span {
+.table-section .row:first-child {
     font-size: 0.8125em;
     line-height: 1.23em;
-    padding-bottom: 0.4em;
     text-transform: uppercase;
     color: rgb(146, 146, 148);
 }
 
-.third-section .totalContainer strong {
-    font-weight: bold;
-    font-size: 1.5em;
-    line-height: 1.333em;
-    color: #2B292D;
-    white-space: nowrap;
+.table-section .row:first-child > div {
+    padding: 1.154em;
 }
 
-.third-section .possible-economy-container strong {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.75em;
-    line-height: 1em;
-    color: #FF7F00;
-    padding-right: 0.4em;
-}
-
-.third-section .possible-economy-container em {
-    display: inline-block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1em;
-    line-height: 1.2em;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #808080;
-}
-
-.third-section .possible-economy-container img {
-    position: relative;
-    top: -0.5em;
-    line-height: 0;
-}
-
-.buttons-container {
-    text-align: right;
-}
-
-.third-section .buttons-container .export-link {
-    display: inline-block;
+.table-section .row:not(:first-child) > div:first-child {
     font-size: 0.875em;
     line-height: 1.714em;
-    text-transform: uppercase;
-    color: #666666;
-    padding: 0.57em 1em 0.57em 2.6em;
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    border-radius: 100px;
-    background: url('images/doc.png') 1em 48% no-repeat;
-    background-size: 14px 18px;
+    font-weight: 500;
+    color: #000;
 }
 
-@media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (   min--moz-device-pixel-ratio: 2),
-    only screen and (     -o-min-device-pixel-ratio: 2/1),
-    only screen and (        min-device-pixel-ratio: 2),
-    only screen and (                min-resolution: 192dpi),
-    only screen and (                min-resolution: 2dppx) {
-    .third-section .buttons-container .export-link {
-        background: url('images/doc@2x.png') 1em 48% no-repeat;
-        background-size: 14px 18px;
+.table-section .row:not(:first-child) > div {
+    padding-top: 1.692em;
+    padding-bottom: 1.307em;
+    font-size: 0.875em;
+    line-height: 1.714em;
+    color: #000;
+    word-break: break-word;
+}
+
+.pageContent .table-section .first-content-row > div:first-child {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.table-section .headline-row {
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 1em;
+    text-transform: capitalize;
+}
+
+.pageContainer .pageContent .table-section .headline-row > div {
+    color: #3399FF;
+}
+
+/* ======================================== TABLE SECTION END ======================================== */
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .overview-section h3 {
+        font-size: 1.65rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .total-section .totalContainer {
+        padding: 1em;
     }
 }
 
