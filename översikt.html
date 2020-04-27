@@ -11,8 +11,180 @@
 </head>
 <body>
   <div class="pageContainer shadow br-10">
-    <h1>Rådgivningsdokument bil</h1>
-    <div class="row top-section">
+    <header class="header">
+        <div class="headerInnerWrapper">
+          <div class="logoContainer">
+            <a href="/" class="logo">
+              Nya.Försäkringar
+            </a>
+          </div>
+          <ul class="linksContainer">
+            <li class="link">
+              <a href="/" class="linkText">
+                Försäkringsöversikt
+              </a>
+            </li>
+            <li class="link">
+              <a href="/" class="linkText">
+                Priskalkylator
+              </a>
+            </li>
+            <li class="link">
+              <a href="/" class="linkText">
+                Rådgivningsdokument
+              </a>
+            </li>
+          </ul>
+          <div class="localeWithButtonsContainer">
+            <!--<div class="buttonContainer">-->
+              <!--<div class="buttonStyle">-->
+                <!--<span class="buttonTextStyle">-->
+                    <!--<FormattedMessage id="app.header.button.text" />-->
+                <!--</span>-->
+              <!--</div>-->
+            <!--</div>-->
+          </div>
+        </div>
+    </header>
+    <header class="mobileHeaderContainer">
+    <div class="mobileHeaderInnerContainer">
+      <div class="mobileHeader">
+        <a href="/" class="logo">
+          Nya.Försäkringar
+        </a>
+        <div class="buttonContainer">
+          <a class="closed">
+            Toggle menu
+          </a>
+        </div>
+      </div>
+      <div class="hideMobileMenu">
+      <ul class="titleList">
+        <li>
+          <a href="/forsakringsservice">
+            Försäkringsservice
+          </a>
+        </li>
+        <li>
+          <a href="/skadeservice">
+            Skadeservice
+          </a>
+        </li>
+        <li>
+          <a href="/forsakringsguiden">
+            Försäkringsguiden
+          </a>
+        </li>
+      </ul>
+      <ul class="linksList">
+        <li class="mobileMenuLink">
+          <a href="/jamfor" class="menuLinkText">
+            Jämföra
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/" class="menuLinkText">
+            Mina Sidor
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/omoss" class="menuLinkText">
+            Om oss
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/forsakringsguiden" class="menuLinkText">
+            Försäkringsguiden
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/faq" class="menuLinkText">
+            FAQ
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/" class="menuLinkText">
+            Support
+          </a>
+        </li>
+        <li class="mobileMenuLink">
+          <a href="/contactus" class="menuLinkText">
+            Kontakta oss
+          </a>
+        </li>
+      </ul>
+
+      <div class="localeContainer">
+        <span class="localeFlag">
+            locale flag
+        </span>
+        <strong class="localeCode">SE</strong>
+      </div>
+    </div>
+    </div>
+  </header>
+
+    <div class="pageContent">
+      <div class="headline">
+        <h1>Rådgivningsdokument</h1>
+        <a href="/">Change</a>
+      </div>
+
+      <div class="row mt-4 third-section">
+        <div class="col-12 br-10 shadow third-section-inner">
+          <div class="overview-table-container">
+            <table class="table table-borderless">
+              <thead>
+              <tr>
+                <th class="table-headlines" scope="col">Forsakrings Oversikt</th>
+                <th class="table-headlines" scope="col">Nuvarande Premie</th>
+                <th class="table-headlines" scope="col">Avfift</th>
+                <th class="table-headlines" scope="col">Premie</th>
+                <th class="table-headlines" scope="col">Premie REK. INCL. AVGIFT</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>CDF 729</td>
+                <td>3000</td>
+                <td>200</td>
+                <td>2300</td>
+                <td>2300</td>
+              </tr>
+              <tr>
+                <td>NORE 252</td>
+                <td>3000</td>
+                <td>200</td>
+                <td>2300</td>
+                <td>2300</td>
+              </tr>
+              </tbody>
+            </table>
+            <div class="totalContainer">
+              <span>TOTAL SUMMA</span>
+              <strong>10600 SEK</strong>
+            </div>
+          </div>
+
+          <div class="possible-economy-container">
+            <strong>
+              5500 SEK
+            </strong>
+            <em>
+              Möjlig Besparing
+            </em>
+            <img src="images/line.svg" alt="" class="w-100">
+          </div>
+
+          <div class="buttons-container">
+            <a href="/" class="export-link">
+              EXPORT
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row top-section">
       <div class="col-12 col-md-6 mt-4 pl-0 pr-0 pr-md-2 card">
         <div class="shadow p-4 card-inner br-10">
           <h2 class="pb-3">Nuvarande produkt</h2>
@@ -49,7 +221,7 @@
       </div>
     </div>
 
-    <div class="row second-section">
+      <div class="row second-section">
       <div class="col-12 col-md-6 mt-4 pl-0 pr-0 pr-md-2 card">
         <div class="shadow p-4 br-10">
           <div class="column-inner">
@@ -211,49 +383,6 @@
         </div>
       </div>
     </div>
-
-    <div class="row mt-4 third-section">
-      <div class="col-12 br-10 shadow third-section-inner">
-        <h1 class="headline">Översikt</h1>
-        <table class="table table-borderless">
-          <thead>
-          <tr>
-            <th class="table-headlines" scope="col">Försäkringsöversikt</th>
-            <th class="table-headlines" scope="col">Nuvarande premie</th>
-            <th class="table-headlines" scope="col">Avgift</th>
-            <th class="table-headlines" scope="col">Premie</th>
-            <th class="table-headlines" scope="col">Premie Rekommenderad</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>CDF 729</td>
-            <td>3000</td>
-            <td>200</td>
-            <td>2300</td>
-            <td>2300</td>
-          </tr>
-          <tr>
-            <td>NOR 252</td>
-            <td>3000</td>
-            <td>200</td>
-            <td>2300</td>
-            <td>2300</td>
-          </tr>
-          </tbody>
-        </table>
-
-        <img src="line.svg" alt="" class="w-100">
-
-        <table class="table table-borderless mb-0">
-          <thead>
-          <tr>
-            <th scope="col-xs">Totalt: 5000kr</th>
-            <th scope="col-xs">Besparing: 600kr</th>
-          </tr>
-          </thead>
-        </table>
-      </div>
     </div>
   </div>
 </body>
